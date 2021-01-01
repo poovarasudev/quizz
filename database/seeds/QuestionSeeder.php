@@ -11,7 +11,7 @@ class QuestionSeeder extends Seeder
      */
     public function run()
     {
-        $quizzes = \App\Quiz::all();
+        $quizzes = \App\Quiz::where('publish', '1')->get();
         foreach ($quizzes as $quiz) {
             for($i = 1; $i <= $quiz->number_of_question; $i++) {
                 \App\Question::create([
