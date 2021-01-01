@@ -28,7 +28,8 @@
             "App\\": "app/"
         },
         "files": [
-            "app/Support/helpers.php"
+            "app/Support/helpers.php",
+            "app/Http/helpers.php"
         ]
     },
     "autoload-dev": {
