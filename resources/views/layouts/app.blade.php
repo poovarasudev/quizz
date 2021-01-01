@@ -9,8 +9,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'Seersol Quiz') }}</title>
     <!-- Styles -->
-    <link href="{{ asset('assets/css/vendor.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('assets/css/vendor.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/custom.css') }}" rel="stylesheet">
 </head>
 <body>
 <div class="wrapper">
@@ -25,7 +25,7 @@
 </div>
 
 
-    <script src="{{ asset('assets/js/vendor.js') }}"></script>
-    <script src="{{ asset('js/demo.js') }}"></script>
+    <script src="{{ secure_asset('assets/js/vendor.js') }}"></script>
+    <script src="{{ secure_asset('js/demo.js') }}"></script>
 </body>
 </html>
