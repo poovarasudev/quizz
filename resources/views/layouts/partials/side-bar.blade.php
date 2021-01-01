@@ -1,8 +1,8 @@
 <div class="sidebar">
-    @if( Auth::user()->role->name == 'admin' )
+    @if( \Route::current()->getName() == 'admin.dashboard' )
         <div class="sidebar-wrapper">
             <div class="logo">
-                <a href="{{ route('admin.dashboard') }}" class="simple-text logo-normal">
+                <a class="simple-text logo-normal">
                     Admin Dashboard
                 </a>
             </div>
@@ -45,30 +45,24 @@
     @else
         <div class="sidebar-wrapper">
             <div class="logo">
-                <a href="{{ route('admin.dashboard') }}" class="simple-text logo-normal">
+                <a class="simple-text logo-normal">
                     Student Dashboard
                 </a>
             </div>
             <ul class="nav">
                 <li class="active">
-                    <a href="">
+                    <a href="{{ route('student.dashboard') }}">
                         <i class="fas fa-home"></i>
-                        <p>Home</p>
+                        <p>All Quizzes</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
-                        <i class="fas fa-user"></i>
-                        <p>My Profile</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ route('logout') }}"
+                    <a  href="{{ route('logout') }}"
                         onclick="event.preventDefault();
-                        document.getElementById('logout-form').submit();"
+                    document.getElementById('logout-form').submit();"
                     >
                         <i class="fas fa-sign-out-alt"></i>
-                        <p>{{ __('Logout') }}</p>
+                        <p>{{ __('Sign Out') }}</p>
                     </a>
 
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
