@@ -67,4 +67,43 @@
         </div>
     </div>
 </div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header text-center">Demo Credentials</div>
+
+                <div class="card-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="email" class="col-sm-4 col-form-label text-md-right">Admin Details</label>
+
+                            <div class="col-md-6">
+                                <span style="color: red">
+                                    Mail : demo.admin@test.com <br>
+                                    Password : password
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="email" class="col-sm-4 col-form-label text-md-right">Student Details</label>
+
+                            <div class="col-md-6">
+                                <span style="color: red">
+                                    Mail : demo.student@test.com <br>
+                                    Password : password
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection
